@@ -16,7 +16,7 @@ graphql:
     }
   variables:
     input:
-      content: Here is content
+      content: "{{params.report_content}}"
       userid: "{{params.user_id}}"
   retryFailures: false
 parameters:
@@ -24,3 +24,7 @@ parameters:
     slug: user_id
     type: shorttext
     description: The ID of the user
+  - name: Report content
+    slug: report_content
+    type: longtext
+    description: The body of the batch run result we want to exposes
