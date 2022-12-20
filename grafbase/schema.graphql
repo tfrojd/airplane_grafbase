@@ -1,0 +1,4 @@
+type Report @model {
+  userid: String!
+  content: String
+}
