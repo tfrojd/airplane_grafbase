@@ -45,7 +45,7 @@ parameters:
 # Configuration for a SQL task.
 sql:
   # The slug of a database resource.
-  resource: tinybird
+  resource: YOUR_SQL_RESOURCE_SLUG
 
   # The path to the .sql file containing the logic for this task. This can be
   # absolute or relative to the location of the definition file. The contents

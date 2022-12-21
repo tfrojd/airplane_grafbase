@@ -1,7 +1,7 @@
 name: result_to_grafbase
 slug: result_to_grafbase
 graphql:
-  resource: hackweek_example
+  resource: YOUR_GRAPHQL_RESOURCE_SLUG
   operation: |-
     mutation create($input: ReportCreateInput!) {
       reportCreate(input: $input) {
