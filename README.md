@@ -29,7 +29,7 @@ The example is a hypothetical internal tool for a GDPR right of access request p
 
     ```
     graphql:
-    resource: YOUR_GRAPHQL_RESOURCE_SLUG
+        resource: YOUR_GRAPHQL_RESOURCE_SLUG
     ```
 
 
@@ -37,7 +37,7 @@ The example is a hypothetical internal tool for a GDPR right of access request p
 
     ```
     sql:
-    resource: YOUR_SQL_RESOURCE_SLUG
+        resource: YOUR_SQL_RESOURCE_SLUG
     ```
 
 7. Change `fetch_report.sql` into an sql query that will work with your sql resource. The actual columns or data does not matter but keep it to a reasonable size.
