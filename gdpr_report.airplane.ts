@@ -4,7 +4,7 @@ import airplane from "airplane";
 export default airplane.task(
   {
     slug: "gdpr_report",
-    name: "gdpr_report (task)",
+    name: "Create GDPR Report",
     parameters: {
       user_id: { name: "user_id", slug: "user_id", type: "shorttext" },
     },
