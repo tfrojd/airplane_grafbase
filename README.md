@@ -1,6 +1,6 @@
 # Using Grafbase to get Airplane task output as a GraphQL API
 
-This is an example on how to send output from an Airplane task to Grafbase. The published task output is then available as a GraphQL API that could be consumed by a webapp or used in an Airplane view. 
+This is an example on how to send output from an [Airplane](https://airplane.io/) task to [Grafbase](https://grafbase.com/). The published task output is then available as a GraphQL API that could be consumed by a webapp or used in an Airplane view. 
 
 The example is a hypothetical internal tool for a GDPR right of access request procedure that would work like this.
 
@@ -25,16 +25,26 @@ The example is a hypothetical internal tool for a GDPR right of access request p
 
 4. In Airplane go to `Settings` -> `Resources` and add a new GraphQL resource. The "Base URL" should be set to the URL you see under "Endpoint" in the Grafbase project overview. You also need to add the two headers from the JavaScript example, `content-type` and `x-api-key`. "Authentication" should be set to `None`.
 
-5. 
+5. Edit `result_to_grafbase.task.yaml` to use the GraphQL resource you just created
+
+    ```
+    graphql:
+    resource: YOUR_GRAPHQL_RESOURCE_SLUG
+    ```
 
 
+6. Edit the sql task in `fetch_report.task.yaml` to use one an sql resource. 
 
+    ```
+    sql:
+    resource: YOUR_SQL_RESOURCE_SLUG
+    ```
 
+7. Change `fetch_report.sql` into an sql query that will work with your sql resource. The actual columns or data does not matter but keep it to a reasonable size.
 
- To deploy:
-> `airplane deploy result_to_grafbase.task.yaml`
+8. Deploy to Airplane with the airplay CLI. `airplane deploy *`
 
- To run locally:
-> `airplane dev result_to_grafbase.task.yaml`
+9. In the Airplane UI, run the `gdpr_report` task.
+
 
 
