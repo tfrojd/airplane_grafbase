@@ -1,8 +1,12 @@
 # Using Grafbase to get Airplane task output as a GraphQL API
 
-This is an example on how to send output from an [Airplane](https://airplane.io/) task to [Grafbase](https://grafbase.com/). The published task output is then available as a GraphQL API that could be consumed by a webapp or used in an Airplane view. 
+## Introduction
 
-The example is a hypothetical internal tool for a GDPR right of access request procedure that would work like this.
+This is an example on how to send output from an [Airplane.io](https://airplane.io/) task to [Grafbase](https://grafbase.com/). The published task output is then available as a GraphQL API that could be consumed by a webapp or used in an Airplane view. 
+
+## Workflow overview
+
+This is a hypothetical internal tool for a GDPR right of access request procedure. It works like this.
 
 1. Data subject sends a request to get their data by email, fax or post.
 
@@ -15,7 +19,7 @@ The example is a hypothetical internal tool for a GDPR right of access request p
 5. The output is now available as a Grafbase GraphQL endpoint. The data subject is then mailed a link to a webpage that uses the endpoint as a backend to show the personal data. (Note: Neither email functionality or webpage for viewing data is included in this repository.)
 
 
-## How to get started
+## How to run
 
 1. Fork this repository to your own Github account
 
