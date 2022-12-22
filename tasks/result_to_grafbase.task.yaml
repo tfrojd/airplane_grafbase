@@ -1,7 +1,7 @@
 name: result_to_grafbase
 slug: result_to_grafbase
 graphql:
-  resource: YOUR_GRAPHQL_RESOURCE_SLUG
+  resource: hackweek_example
   operation: |-
     mutation create($input: ReportCreateInput!) {
       reportCreate(input: $input) {
@@ -27,4 +27,4 @@ parameters:
   - name: Report content
     slug: report_content
     type: longtext
-    description: The body of the batch run result we want to exposes
+    description: The body of the batch run result we want to expose
