@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is an example on how to send output from an [Airplane](https://airplane.dev/) task to [Grafbase](https://grafbase.com/). The published task output is then available as a GraphQL API that could be consumed by a webapp or used in an Airplane view. 
+This is an example on how to send output from an [Airplane](https://airplane.dev/) task to [Grafbase](https://grafbase.com/). The published task output is then available as a GraphQL API that could be consumed by a webapp or used in Airplane. 
 
 ## Workflow overview
 
